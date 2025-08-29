@@ -1,0 +1,358 @@
+ html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Adjust padding for the sections to avoid content being hidden behind the navbar */
+  body {
+    
+    margin: 0;
+    padding: 0;
+}
+
+  
+  /* Home Section */
+  .home {
+    
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+  /* Team Information Section */
+  .team-info,
+  .stadium-info {
+      font-family: 'Cairo', sans-serif;
+      padding: 50px 0;
+      background-color: #052312;
+      text-align: right;
+      color: white;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 2em;
+  }
+  
+  .foundation-info {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .foundation-info img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .foundation-info strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 1px;
+  }
+  
+  /* Stadium Section */
+.stadium {
+  margin-top: -10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 0px; /* Adjust the margin to remove the gap */
+  overflow: hidden; /* Add overflow: hidden to hide any content outside the container */
+}
+
+.stadium-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Cairo', sans-serif;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.stadium-info h2,
+.stadium-info p {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.stadium-info p {
+  margin-bottom: 25px;
+}
+
+.stadium h2 {
+  font-size: 6em;
+}
+
+.stadium .stadium-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.stadium .stadium-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.stadium .stadium-image img:hover {
+  transition: none;
+}
+  /* Coach Section */
+
+.coach
+ {
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: auto; /* Add the missing semicolon */
+}
+
+.coach-info {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for coach information */
+    text-align: right;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.coach-info .info-content {
+    text-align: right; /* Align text to the right */
+}
+
+.coach-info .info-content img {
+    width: 15%; /* Adjust the width as needed for the coach photo */
+    height: auto;
+    border: none;
+    border-radius: 9px;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    object-position: center center;
+    order: -1; /* Move the image to the left */
+}
+
+.coach-info h2,
+.coach-info p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Font size for coach information */
+}
+
+.coach-info p {
+    margin-bottom: 25px; /* Spacing between paragraphs */
+}
+
+.coach h2 {
+    font-size: 6em; /* Font size for section title */
+}
+
+.coach .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+/* New Section Styles *//* Team Squad Section */
+/* Team Squad Section */
+#team-squad {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  #team-squad .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6); /* Adjust the brightness to control the overlay darkness */
+  }
+  
+  #team-squad h2 {
+    font-size: 5em;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 50px;
+    z-index: 2;
+  }
+  .social-media-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .social-media-button {
+    display: inline-block;
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px;
+    background-size: cover;
+  }
+  
+  .instagram {
+    background-image: url('icons8-instagram.svg'); /* Replace 'instagram-icon.png' with your Instagram icon image */
+  }
+  
+  .facebook {
+    background-image: url('icons8-facebook.svg'); /* Replace 'facebook-icon.png' with your Facebook icon image */
+  }
+  
+  .twitter {
+    background-image: url('icons8-twitterx.svg'); /* Replace 'twitter-icon.png' with your Twitter icon image */
+  }
+/* Updated News Section Styles */
+.news {
+  font-family: 'Cairo', sans-serif;
+  padding: 50px 0;
+  background-color: #052312;
+  color: white;
+  text-align: center;
+}
+
+.news .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news h2 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.news-article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.news-article img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article-content {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.news-article h3 {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.news-article p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+/* Add this to your existing CSS or create a new section for footer styles */
+footer {
+  background-color: #052312;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.center-text {
+  font-weight: bold;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  font-size: 20px;
+  background-color: #052312;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #035e0a;
+}
+

@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Adjust padding for the sections to avoid content being hidden behind the navbar */
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+  
+  /* Home Section */
+  .home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+  /* Team Information Section */
+  .team-info {
+    font-family: 'Cairo', sans-serif;
+    padding: 50px 0;
+    background-color: #052312;
+    text-align: right;
+    color: white;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Ensure it's above the background image */
+  }
+  
+  /* Add the rest of your styles for the team-info section */
+  .team-info {
+    font-family: 'Cairo', sans-serif;
+    padding: 50px 0;
+    background-color: #052312;
+    text-align: right;
+    color: white;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 2em;
+  }
+  
+  .foundation-info {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .foundation-info img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .foundation-info strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 1px;
+  }
+  
+  /* Stadium Section */
+  .stadium {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stadium-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+  
+  /* Add the rest of your styles for the stadium section */
+  .stadium {
+    margin-top: -10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0px; /* Adjust the margin to remove the gap */
+    overflow: hidden; /* Add overflow: hidden to hide any content outside the container */
+  }
+  
+  .stadium-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+  
+  .stadium-info h2,
+  .stadium-info p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .stadium-info p {
+    margin-bottom: 25px;
+  }
+  
+  .stadium h2 {
+    font-size: 6em;
+  }
+  
+  .stadium .stadium-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .stadium .stadium-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .stadium .stadium-image img:hover {
+    transition: none;
+  }
+  /* Coach Section */
+
+.coach
+ {
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: auto; /* Add the missing semicolon */
+}
+
+.coach-info {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for coach information */
+    text-align: right;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.coach-info .info-content {
+    text-align: right; /* Align text to the right */
+}
+
+.coach-info .info-content img {
+    width: 15%; /* Adjust the width as needed for the coach photo */
+    height: auto;
+    border: none;
+    border-radius: 9px;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    object-position: center center;
+    order: -1; /* Move the image to the left */
+}
+
+.coach-info h2,
+.coach-info p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Font size for coach information */
+}
+
+.coach-info p {
+    margin-bottom: 25px; /* Spacing between paragraphs */
+}
+
+.coach h2 {
+    font-size: 6em; /* Font size for section title */
+}
+
+.coach .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure the navbar is visible */
+.navbar.visible {
+    opacity: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #052312;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar li {
+    margin-bottom: 5px; /* Adjust the margin to reduce space between list items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Adjust the font size to make it smaller */
+    padding: 8px; /* Adjust the padding to make it smaller */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #01310b;
+}
